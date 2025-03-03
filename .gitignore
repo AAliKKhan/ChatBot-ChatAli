@@ -1,0 +1,5 @@
+# Ignore environment files
+.env
+.streamlit/secrets.toml
+__pycache__/
+.vscode/
