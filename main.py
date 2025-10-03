@@ -21,7 +21,7 @@ genai.configure(api_key=GENAI_API_KEY)
 # 🔹 Function to interact with Gemini
 def get_gemini_response(prompt):
     try:
-        model = genai.GenerativeModel("gemini-1.5-pro-latest")  # Ensure this model exists
+        model = genai.GenerativeModel("gemini-2.5-pro-latest")  # Ensure this model exists
         response = model.generate_content(prompt)
         return response.text if response else "⚠️ Sorry, I couldn't process that."
     except Exception as e:
